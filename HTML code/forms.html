@@ -7,6 +7,8 @@
 
 <body>
     <h3>Login</h3>
+    <fieldset style="width: 400px;">
+        <legend>Personal Information</legend>
     <form>
         <label for="username">Username: </label>
         <input type="text" id="username" required placeholder="Enter first name" title="Enter your first name">
@@ -27,7 +29,7 @@
         <input type="url">
  <br><br>
         <label>Upload Resume</label>
-        <input type="file">
+        <input type="file" accept=".pdf">
  <br><br>
         <label>Skills:</label>
         <input type="checkbox">java
@@ -49,10 +51,13 @@
             <option>Bengaluru</option>
         </select>
 <br><br>
+        <textarea>Write your feedback.....</textarea>
+<br><br>
         <input type="range"><br><br>
         <button>Submit</button>
         <input type="reset">
     </form>
+</fieldset>
 </body>
 
 </html>
