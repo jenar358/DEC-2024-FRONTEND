@@ -1,0 +1,56 @@
+<script>
+    class Student{
+        constructor(name,id,paid_amt){
+            this.s_name = name;
+            this.s_id = id;
+            this.amt = paid_amt;
+        }
+        javaCourse(){
+            console.log(this.s_name,'Enrolled for Java');
+        }
+        pythonCourse(){
+            console.log(this.s_name,'Enrolled for Python');
+        }
+        getInfo(){
+            console.log('Student Name is:',this.s_name);
+            console.log('Student ID is:',this.s_id);
+            console.log('Paid Amount is:',this.amt);
+        }
+    }
+
+    s1 = new Student('Akash',101,25000)
+    s1.javaCourse()
+    s2 = new Student('Pooja',102,18000)
+    s2.pythonCourse()
+    s3 = new Student('Ankit',103,15000)
+    s3.javaCourse()
+    s1.getInfo()
+    s2.getInfo()
+    s3.getInfo()
+
+
+    class Employee{
+        constructor(name,id,salary){
+            this.emp_name = name;
+            this.emp_id = id;
+            this.emp_salary = salary;
+        }
+        work(){
+            console.log(this.emp_name,'is working');
+        }
+        code(){
+            console.log(this.emp_name,'is coding');
+        }
+        getInfo(){
+            console.log('Employee name is:',this.emp_name);
+            console.log('Employee ID is:',this.emp_id);
+            console.log('Employee salary is:',this.emp_salary);
+        }
+    }
+    e1 = new Employee('Akash',101,25000)
+    e1.work()
+    e1.getInfo()
+    e2 = new Employee('Pooja',102,55000)
+    e2.code()
+    e2.getInfo()
+    </script>

@@ -1,0 +1,12 @@
+<script>
+    //Function Declarations are Hoisted
+  add(10,20)
+  function add(a,b){
+    console.log(a+b);
+  }
+
+  // function Expression are not Hoisted
+  let sub = function(a,b){
+    console.log(a-b);
+  }
+</script>
